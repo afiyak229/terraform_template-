@@ -1,7 +1,6 @@
-#terraform_template-
-terraform_template-
+terraform {
   required_providers {
-    aws = {
+    aws = 2{
       source  = "hashicorp/aws"
       version = "~> 4.16"
     }
@@ -22,4 +21,3 @@ resource "aws_instance" "example_server" {
     Name = "terraform_example"
   }
 }
-
